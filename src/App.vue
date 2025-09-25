@@ -1,4 +1,5 @@
 <template>
+  <AppTitle> Hooldusjuhi igapäevaelu </AppTitle>
   <div class="phases-display">
     <PhaseComponent
       :phaseTitle="'Etapp 1'"
@@ -61,10 +62,12 @@
 
 <script>
 import PhaseComponent from "./components/PhaseComponent.vue";
+import AppTitle from "./components/AppTitle.vue";
 
 export default {
   components: {
     PhaseComponent,
+    AppTitle,
   },
 };
 </script>
@@ -75,5 +78,13 @@ export default {
   justify-content: center;
   flex-wrap: nowrap; /* Prevents wrapping to the next line */
   padding: 20px;
+}
+.h1 {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* A clean, widely available font stack */
+  font-size: 2.5em; /* Large size */
+  color: #333; /* Dark gray color */
+  margin-top: 20px; /* Optional: adds space above the title */
+  margin-bottom: 10px; /* Optional: adds space below the title */
 }
 </style>

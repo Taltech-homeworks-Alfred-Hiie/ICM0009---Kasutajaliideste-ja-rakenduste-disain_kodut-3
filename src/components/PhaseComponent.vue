@@ -47,6 +47,7 @@ export default {
 
 <style scoped>
 .phase-container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   border-radius: 8px; /* Slightly rounded corners like in the image */
   padding: 20px;
   margin: 10px; /* Space between duplicated components */
